@@ -1,8 +1,24 @@
 .debug {
     background-color: rgba(165, 42, 42, 0.5);
-    border: 1px solid rgba(165, 42, 42, 0.863);;
+    border: 1px solid rgba(165, 42, 42, 0.863);
 }
 
-.download-button {
-    width: 100px;
+.__nav-footer-color {
+    background-color: #242e37;
+}
+
+.__green-color {
+    background-color: #1abc9c;
+}
+
+.__dark-blue-color {
+    background-color: #3a546d;
+}
+
+.form-control::placeholder {
+    color: #333333;
+}
+
+.__title-color {
+    color: #333333
 }
