@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Freelancer</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -24,22 +28,31 @@
                     <div class="__nav-title py-3 fs-5">
                         START BOOTSTRAP
                     </div>
-                    <div class="__nav-links">
+                    <div class="__nav-links d-none d-md-block">
                         <ul class="list-unstyled d-flex gap-3 m-0">
                             <li class="nav-item py-3"><a class="nav-link" href="#">PORTFOLIO</a></li>
                             <li class="nav-item py-3"><a class="nav-link" href="#">ABOUT</a></li>
                             <li class="nav-item py-3"><a class="nav-link" href="#">CONTACT</a></li>
                         </ul>
                     </div>
+                    <div class="__hamburger-icon d-block d-md-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </nav>
         </div>
 
-        <div class="text-center py-5 text-white __green-color">
-            <img src="https://picsum.photos/100" class="img-fluid p-2" alt="Lorem">
+        <div class="d-column-flex align-items-center text-center py-5 text-white __green-color">
+            <div class="__avatar-img">
+                <img src="img/avatar.svg" class="img-fluid p-2" alt="Lorem">
+            </div>
             <h1>START BOOTSTRAP</h1>
-            <div class="__separator">
-                -
+            <div class="d-flex justify-content-center align-items-center gap-3 __separator">
+                <div class="__separator-row"></div>
+                <div class="__star">
+                    &#9733;
+                </div>
+                <div class="__separator-row"></div>
             </div>
             <h6>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
         </div>
@@ -50,38 +63,42 @@
         <!-- PORTFOLIO SECTION -->
         <div class="container text-center py-5">
             <h2 class="__title-color">PORTFOLIO</h2>
-            <div class="__separator">
-                -
+            <div class="d-flex justify-content-center align-items-center gap-3 __separator">
+                <div class="__separator-row bgc-black"></div>
+                <div class="__star">
+                    &#9733;
+                </div>
+                <div class="__separator-row bgc-black"></div>
             </div>
-            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-3">
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-3 my-2">
                 <div class="col">
-                    <div class="__col rounded-3 debug">
-                        <img src="https://picsum.photos/150/100" alt="">
+                    <div class="__col">
+                        <img class="rounded-3" src="img/cabin.png" alt="cabin">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="__col rounded-3 debug">
-                        <img src="https://picsum.photos/150/100" alt="">
+                    <div class="__col">
+                        <img class="rounded-3" src="img/cake.png" alt="cake">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="__col rounded-3 debug">
-                        <img src="https://picsum.photos/150/100" alt="">
+                    <div class="__col">
+                        <img class="rounded-3" src="img/circus.png" alt="circus">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="__col rounded-3 debug">
-                        <img src="https://picsum.photos/150/100" alt="">
+                    <div class="__col">
+                        <img class="rounded-3" src="img/game.png" alt="game">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="__col rounded-3 debug">
-                        <img src="https://picsum.photos/150/100" alt="">
+                    <div class="__col">
+                        <img class="rounded-3" src="img/safe.png" alt="safe">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="__col rounded-3 debug">
-                        <img src="https://picsum.photos/150/100" alt="">
+                    <div class="__col">
+                        <img class="rounded-3" src="img/submarine.png" alt="">
                     </div>
                 </div>
             </div>
@@ -91,10 +108,14 @@
         <div class="__green-color">
             <div class="container p-5 text-white">
                 <h2 class="text-center">ABOUT</h2>
-                <div class="__separator text-center">
-                    -
+                <div class="d-flex justify-content-center align-items-center gap-3 __separator">
+                    <div class="__separator-row"></div>
+                    <div class="__star">
+                        &#9733;
+                    </div>
+                    <div class="__separator-row"></div>
                 </div>
-                <div class="row text-start my-4">
+                <div class="row text-start my-4 d-none d-md-flex">
                     <div class="col-6">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea odio et quae eum
                             voluptatum
@@ -103,6 +124,22 @@
                             beatae?</p>
                     </div>
                     <div class="col-6">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, illo sed labore, minima modi
+                            explicabo quo dolore blanditiis nisi tempora et omnis ea, nostrum inventore impedit est
+                            ipsam
+                            odit eos.</p>
+                    </div>
+                </div>
+
+                <div class="row my-4 d-flex d-md-none">
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea odio et quae eum
+                            voluptatum
+                            quisquam totam dolorem eligendi, dolores similique maxime est tempora unde atque! Sunt quo
+                            natus
+                            beatae?</p>
+                    </div>
+                    <div class="col-12">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, illo sed labore, minima modi
                             explicabo quo dolore blanditiis nisi tempora et omnis ea, nostrum inventore impedit est
                             ipsam
@@ -118,8 +155,12 @@
         <!-- CONTACT SECTION -->
         <div class="container text-center p-5">
             <h2 class="__title-color">CONTACT ME</h2>
-            <div class="__separator">
-                -
+            <div class="d-flex justify-content-center align-items-center gap-3 __separator">
+                <div class="__separator-row bgc-black"></div>
+                <div class="__star">
+                    &#9733;
+                </div>
+                <div class="__separator-row bgc-black"></div>
             </div>
             <form class="text-start py-5">
                 <div class="mb-3">
@@ -132,32 +173,62 @@
                     <input type="tel" placeholder="Phone Number" class="form-control border-0 rounded-0 border-bottom">
                 </div>
                 <div class="form-floating">
-                    <textarea rows="5" class="form-control border-0 rounded-0 border-bottom" placeholder="Message" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea rows="5" class="form-control border-0 rounded-0 border-bottom" placeholder="Message"
+                        id="floatingTextarea2" style="height: 100px"></textarea>
                     <label for="floatingTextarea2">Message</label>
-                  </div>
-                <button type="submit" class="btn btn-primary my-4">Submit</button>
+                </div>
+                <button type="submit" class="btn btn-primary my-4 border-0 __button">Send</button>
             </form>
         </div>
     </main>
 
     <footer>
         <div class="__dark-blue-color text-white">
-            <div class="container py-4 text-center">
-                <div class="row">
+            <div class="container py-5 text-center">
+                <div class="row d-none d-md-flex">
                     <div class="col">
                         <h4>LOCATION</h4>
+                        <p>2215 Jhon Daniel Drive Clark, MO 54243</p>
                     </div>
                     <div class="col">
                         <h4>AROUND THE WEB</h4>
+                        <div class="__socials">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-google-plus"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
                     </div>
                     <div class="col">
                         <h4>ABOUT FREELANCER</h4>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a class="__anchors-color"
+                                href="#">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+                <div class="row d-flex d-md-none">
+                    <div class="col-12 py-3">
+                        <h4>LOCATION</h4>
+                        <p>2215 Jhon Daniel Drive Clark, MO 54243</p>
+                    </div>
+                    <div class="col-12 py-3">
+                        <h4>AROUND THE WEB</h4>
+                        <div class="__socials">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-google-plus"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 py-3">
+                        <h4>ABOUT FREELANCER</h4>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a class="__anchors-color"
+                                href="#">Start Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="text-center text-white __nav-footer-color">
-            <p class="py-3">Copyright Your Website 2023</p>
+            <p class="py-4 m-0">Copyright Your Website 2023</p>
         </div>
     </footer>
 
